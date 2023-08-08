@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Duolingo Hide Text
 // @namespace    http://tampermonkey.net/
-// @version      0.4.0
+// @version      0.4.1
 // @author       Marlon Passos
 // @match        *://*.duolingo.com/*
 // @icon         https://www.google.com/s2/favicons?domain=duolingo.com
@@ -43,10 +43,13 @@ function createStyleClass () {
             .${CLASS_CSS_HIDE_TEXT}:hover {
                 color: #3c3c3c
             }
-
+            
+            /*   Comentado, para que os tokens aparecam
             ${CLASS_CSS_TAP_TOKEN_TEXT} {
-                color: transparent;
-            }
+                
+               color: transparent;
+             }
+             */
         </style>`
 
     document.body.insertAdjacentHTML('beforeend', styleElementInString )
